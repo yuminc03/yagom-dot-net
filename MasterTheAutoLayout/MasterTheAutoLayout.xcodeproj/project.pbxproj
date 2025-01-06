@@ -15,6 +15,7 @@
 		05E92EA52D2B94F2004327D3 /* MasterTheAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92EA32D2B94F2004327D3 /* MasterTheAutoLayoutTests.swift */; };
 		05E92EA92D2B94F6004327D3 /* MasterTheAutoLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92EA62D2B94F6004327D3 /* MasterTheAutoLayoutUITests.swift */; };
 		05E92EAA2D2B94F6004327D3 /* MasterTheAutoLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92EA72D2B94F6004327D3 /* MasterTheAutoLayoutUITestsLaunchTests.swift */; };
+		05E92EB12D2B9FD8004327D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E92EB02D2B9FD8004327D3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		05E92EA32D2B94F2004327D3 /* MasterTheAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTheAutoLayoutTests.swift; sourceTree = "<group>"; };
 		05E92EA62D2B94F6004327D3 /* MasterTheAutoLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTheAutoLayoutUITests.swift; sourceTree = "<group>"; };
 		05E92EA72D2B94F6004327D3 /* MasterTheAutoLayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTheAutoLayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05E92EB02D2B9FD8004327D3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,8 @@
 				05E92E962D2B94EF004327D3 /* LaunchScreen.storyboard */,
 				05E92E992D2B94EF004327D3 /* SceneDelegate.swift */,
 				05E92E9A2D2B94EF004327D3 /* MainVC.swift */,
+				05E92EB02D2B9FD8004327D3 /* Main.storyboard */,
+				05E92EAB2D2B9940004327D3 /* ConstraintsWithCode */,
 			);
 			path = MasterTheAutoLayout;
 			sourceTree = "<group>";
@@ -122,6 +126,13 @@
 				05E92EA72D2B94F6004327D3 /* MasterTheAutoLayoutUITestsLaunchTests.swift */,
 			);
 			path = MasterTheAutoLayoutUITests;
+			sourceTree = "<group>";
+		};
+		05E92EAB2D2B9940004327D3 /* ConstraintsWithCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ConstraintsWithCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05E92EB12D2B9FD8004327D3 /* Main.storyboard in Resources */,
 				05E92E9C2D2B94EF004327D3 /* Assets.xcassets in Resources */,
 				05E92E9E2D2B94EF004327D3 /* LaunchScreen.storyboard in Resources */,
 			);
