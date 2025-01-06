@@ -11,7 +11,7 @@
 		05E92E9E2D2B94EF004327D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E92E962D2B94EF004327D3 /* LaunchScreen.storyboard */; };
 		05E92EA02D2B94EF004327D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92E922D2B94EF004327D3 /* AppDelegate.swift */; };
 		05E92EA12D2B94EF004327D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92E992D2B94EF004327D3 /* SceneDelegate.swift */; };
-		05E92EA22D2B94EF004327D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92E9A2D2B94EF004327D3 /* ViewController.swift */; };
+		05E92EA22D2B94EF004327D3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92E9A2D2B94EF004327D3 /* MainVC.swift */; };
 		05E92EA52D2B94F2004327D3 /* MasterTheAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92EA32D2B94F2004327D3 /* MasterTheAutoLayoutTests.swift */; };
 		05E92EA92D2B94F6004327D3 /* MasterTheAutoLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92EA62D2B94F6004327D3 /* MasterTheAutoLayoutUITests.swift */; };
 		05E92EAA2D2B94F6004327D3 /* MasterTheAutoLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92EA72D2B94F6004327D3 /* MasterTheAutoLayoutUITestsLaunchTests.swift */; };
@@ -43,7 +43,7 @@
 		05E92E942D2B94EF004327D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E92E952D2B94EF004327D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05E92E992D2B94EF004327D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		05E92E9A2D2B94EF004327D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05E92E9A2D2B94EF004327D3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		05E92EA32D2B94F2004327D3 /* MasterTheAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTheAutoLayoutTests.swift; sourceTree = "<group>"; };
 		05E92EA62D2B94F6004327D3 /* MasterTheAutoLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTheAutoLayoutUITests.swift; sourceTree = "<group>"; };
 		05E92EA72D2B94F6004327D3 /* MasterTheAutoLayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTheAutoLayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				05E92E942D2B94EF004327D3 /* Info.plist */,
 				05E92E962D2B94EF004327D3 /* LaunchScreen.storyboard */,
 				05E92E992D2B94EF004327D3 /* SceneDelegate.swift */,
-				05E92E9A2D2B94EF004327D3 /* ViewController.swift */,
+				05E92E9A2D2B94EF004327D3 /* MainVC.swift */,
 			);
 			path = MasterTheAutoLayout;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 			files = (
 				05E92EA02D2B94EF004327D3 /* AppDelegate.swift in Sources */,
 				05E92EA12D2B94EF004327D3 /* SceneDelegate.swift in Sources */,
-				05E92EA22D2B94EF004327D3 /* ViewController.swift in Sources */,
+				05E92EA22D2B94EF004327D3 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
