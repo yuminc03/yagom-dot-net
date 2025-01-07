@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05308D082D2CA47A00E1011B /* ConstraintVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05308D072D2CA47000E1011B /* ConstraintVC.swift */; };
 		05308D0A2D2CA6EF00E1011B /* ChildScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05308D092D2CA6C900E1011B /* ChildScreen.swift */; };
+		05308D0D2D2CB11C00E1011B /* StackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05308D0C2D2CB11900E1011B /* StackVC.swift */; };
 		05E92E9C2D2B94EF004327D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E92E932D2B94EF004327D3 /* Assets.xcassets */; };
 		05E92E9E2D2B94EF004327D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E92E962D2B94EF004327D3 /* LaunchScreen.storyboard */; };
 		05E92EA02D2B94EF004327D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92E922D2B94EF004327D3 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		05308D072D2CA47000E1011B /* ConstraintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintVC.swift; sourceTree = "<group>"; };
 		05308D092D2CA6C900E1011B /* ChildScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildScreen.swift; sourceTree = "<group>"; };
+		05308D0C2D2CB11900E1011B /* StackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackVC.swift; sourceTree = "<group>"; };
 		05E92E5E2D2B94E6004327D3 /* MasterTheAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterTheAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E92E742D2B94E8004327D3 /* MasterTheAutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterTheAutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E92E7E2D2B94E8004327D3 /* MasterTheAutoLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterTheAutoLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05308D0B2D2CB10F00E1011B /* DynamicStackView */ = {
+			isa = PBXGroup;
+			children = (
+				05308D0C2D2CB11900E1011B /* StackVC.swift */,
+			);
+			path = DynamicStackView;
+			sourceTree = "<group>";
+		};
 		05E92E552D2B94E6004327D3 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 				05E92EB42D2BA317004327D3 /* MainTableViewCell.swift */,
 				05E92EB02D2B9FD8004327D3 /* Main.storyboard */,
 				05E92EAB2D2B9940004327D3 /* ConstraintsWithCode */,
+				05308D0B2D2CB10F00E1011B /* DynamicStackView */,
 			);
 			path = MasterTheAutoLayout;
 			sourceTree = "<group>";
@@ -292,6 +303,7 @@
 				05E92EA22D2B94EF004327D3 /* MainVC.swift in Sources */,
 				05308D0A2D2CA6EF00E1011B /* ChildScreen.swift in Sources */,
 				05E92EB52D2BA320004327D3 /* MainTableViewCell.swift in Sources */,
+				05308D0D2D2CB11C00E1011B /* StackVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

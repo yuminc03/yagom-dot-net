@@ -3,6 +3,7 @@ import UIKit
 enum ChildScreen: Int, CaseIterable {
   case layoutAnchor
   case nsLayoutConstraints
+  case stack
   
   var title: String {
     switch self {
@@ -11,6 +12,9 @@ enum ChildScreen: Int, CaseIterable {
       
     case .nsLayoutConstraints:
       return "NSLayoutConstraint"
+      
+    case .stack:
+      return "Dynamic Stack View"
     }
   }
   
@@ -21,6 +25,9 @@ enum ChildScreen: Int, CaseIterable {
       
     case .nsLayoutConstraints:
       return ConstraintVC()
+      
+    case .stack:
+      return StackVC()
     }
   }
 }
