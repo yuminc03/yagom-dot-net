@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05308D082D2CA47A00E1011B /* ConstraintVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05308D072D2CA47000E1011B /* ConstraintVC.swift */; };
+		05308D0A2D2CA6EF00E1011B /* ChildScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05308D092D2CA6C900E1011B /* ChildScreen.swift */; };
 		05E92E9C2D2B94EF004327D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E92E932D2B94EF004327D3 /* Assets.xcassets */; };
 		05E92E9E2D2B94EF004327D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E92E962D2B94EF004327D3 /* LaunchScreen.storyboard */; };
 		05E92EA02D2B94EF004327D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92E922D2B94EF004327D3 /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05308D072D2CA47000E1011B /* ConstraintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintVC.swift; sourceTree = "<group>"; };
+		05308D092D2CA6C900E1011B /* ChildScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildScreen.swift; sourceTree = "<group>"; };
 		05E92E5E2D2B94E6004327D3 /* MasterTheAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterTheAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E92E742D2B94E8004327D3 /* MasterTheAutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterTheAutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E92E7E2D2B94E8004327D3 /* MasterTheAutoLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterTheAutoLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +113,7 @@
 				05E92E962D2B94EF004327D3 /* LaunchScreen.storyboard */,
 				05E92E992D2B94EF004327D3 /* SceneDelegate.swift */,
 				05E92E9A2D2B94EF004327D3 /* MainVC.swift */,
+				05308D092D2CA6C900E1011B /* ChildScreen.swift */,
 				05E92EB42D2BA317004327D3 /* MainTableViewCell.swift */,
 				05E92EB02D2B9FD8004327D3 /* Main.storyboard */,
 				05E92EAB2D2B9940004327D3 /* ConstraintsWithCode */,
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				05E92EB22D2BA11D004327D3 /* AnchorVC.swift */,
+				05308D072D2CA47000E1011B /* ConstraintVC.swift */,
 			);
 			path = ConstraintsWithCode;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 				05E92EA02D2B94EF004327D3 /* AppDelegate.swift in Sources */,
 				05E92EB32D2BA120004327D3 /* AnchorVC.swift in Sources */,
 				05E92EA12D2B94EF004327D3 /* SceneDelegate.swift in Sources */,
+				05308D082D2CA47A00E1011B /* ConstraintVC.swift in Sources */,
 				05E92EA22D2B94EF004327D3 /* MainVC.swift in Sources */,
+				05308D0A2D2CA6EF00E1011B /* ChildScreen.swift in Sources */,
 				05E92EB52D2BA320004327D3 /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

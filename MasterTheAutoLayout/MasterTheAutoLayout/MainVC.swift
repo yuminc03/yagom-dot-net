@@ -1,9 +1,7 @@
 import UIKit
 
 final class MainVC: UIViewController {
-  private let titles = [
-    "Layout Anchors",
-  ]
+  private let childs = ChildScreen.allCases
   
   private let tableView: UITableView = {
     let v = UITableView(frame: .zero, style: .insetGrouped)
@@ -43,16 +41,10 @@ final class MainVC: UIViewController {
 
 extension MainVC: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let vc: UIViewController
-    
-    switch indexPath.row {
-    case 0:
-      vc = AnchorVC()
-      navigationController?.pushViewController(vc, animated: true)
-      
-    default:
-      break
-    }
+    navigationController?.pushViewController(
+      childs[indexPath.row].vc,
+      animated: true
+    )
   }
 }
 
@@ -61,7 +53,7 @@ extension MainVC: UITableViewDataSource {
     _ tableView: UITableView,
     numberOfRowsInSection section: Int
   ) -> Int {
-    return titles.count
+    return childs.count
   }
   
   func tableView(
@@ -75,7 +67,7 @@ extension MainVC: UITableViewDataSource {
       return UITableViewCell()
     }
     
-    cell.updateUI(title: titles[indexPath.row])
+    cell.updateUI(title: childs[indexPath.row].title)
     return cell
   }
 }
