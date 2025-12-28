@@ -13,4 +13,7 @@
    <FileRef
       location = "group:SimpleStackViewExample/SimpleStackViewExample.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:VarietySolutionsExample/VarietySolutionsExample.xcodeproj">
+   </FileRef>
 </Workspace>
