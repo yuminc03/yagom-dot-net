@@ -11,17 +11,20 @@ import XCTest
 final class StrangeCalculatorTests: XCTestCase {
   
   var sut: StrangeCalculator!
+  var lotto: LottoMachine!
   
   override func setUpWithError() throws {
     try super.setUpWithError()
     
     sut = StrangeCalculator()
+    lotto = LottoMachine()
   }
   
   override func tearDownWithError() throws {
     try super.tearDownWithError()
     
     sut = nil
+    lotto = nil
   }
   
   func test_addNumbers() {
