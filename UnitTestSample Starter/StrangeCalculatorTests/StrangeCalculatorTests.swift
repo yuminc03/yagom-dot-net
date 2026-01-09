@@ -137,4 +137,18 @@ final class StrangeCalculatorTests: XCTestCase {
     XCTAssertTrue(result)
   }
   
+  func test_countMatchingNumber_몇개의번호를맞추었는지() throws {
+    // given
+    let randomNumbers = lotto.makeRandomLottoNumbersArray()
+    let winnerNumbers = lotto.makeRandomLottoNumbersArray()
+    
+    // when
+    let result = try lotto.countMatchingNumber(
+      user: randomNumbers,
+      winner: winnerNumbers
+    )
+    
+    // then
+    XCTAssertNoThrow(result)
+  }
 }
