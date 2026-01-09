@@ -16,4 +16,7 @@
    <FileRef
       location = "group:VarietySolutionsExample/VarietySolutionsExample.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:UnitTestSample Starter/UnitTestSample.xcodeproj">
+   </FileRef>
 </Workspace>
