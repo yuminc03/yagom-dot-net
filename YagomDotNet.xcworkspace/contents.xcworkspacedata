@@ -19,4 +19,7 @@
    <FileRef
       location = "group:UnitTestSample Starter/UnitTestSample.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:UpDownGame Starter/UpDownGame.xcodeproj">
+   </FileRef>
 </Workspace>
