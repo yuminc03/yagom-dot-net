@@ -4,27 +4,47 @@
 //
 
 import XCTest
+@testable import UpDownGame
 
 class UpDownGameTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+  
+  private var sut: UpDownGame!
+  
+  override func setUpWithError() throws {
+    try super.setUpWithError()
+    
+    sut = UpDownGame()
+  }
+  
+  override func tearDownWithError() throws {
+    try super.tearDownWithError()
+    
+    sut = nil
+  }
+  
+  // MARK: - compareValue
+  
+  func test_compareValue호출시_hitNumber가randomValue보다_클때_Down반환하는지() {
+    // given
+    let hitNumber = 10
+    sut.randomValue = 5
+    
+    // when
+    let result = sut.compareValue(with: hitNumber)
+    
+    // then
+    XCTAssertEqual(result, .Down)
+  }
+  
+  func test_compareValue호출시_hitNumber가randomValue보다_작을때_Up반환하는지() {
+    // given
+    let hitNumber = 5
+    sut.randomValue = 10
+    
+    // when
+    let result = sut.compareValue(with: hitNumber)
+    
+    // then
+    XCTAssertEqual(result, .Up)
+  }
 }
