@@ -73,4 +73,18 @@ class UpDownGameTests: XCTestCase {
     
     wait(for: [promise], timeout: 10) // wait
   }
+  
+  func test_reset호출시_tryCount가0이되는지() {
+    // given
+    let promise = expectation(description: "It makes tryCount zero")
+    sut.tryCount = 4 // 기본값인 0으로 테스트를 진행하면 무조건 테스트에 통과하므로 0이 아닌 값을 할당
+    
+    // when
+    sut.reset {
+      XCTAssertEqual(self.sut.tryCount, 0)
+      promise.fulfill()
+    }
+    
+    wait(for: [promise], timeout: 10)
+  }
 }
