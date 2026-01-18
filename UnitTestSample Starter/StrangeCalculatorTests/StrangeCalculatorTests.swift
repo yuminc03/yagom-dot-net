@@ -78,4 +78,16 @@ final class StrangeCalculatorTests: XCTestCase {
     // then
     XCTAssertEqual(result, 20)
   }
+  
+  func test_addOddNumbers호출시_4와68과222을전달하면_0이나오는지() {
+    // given
+    let numbers = [4, 68, 222]
+    
+    // when
+    let result = sut.addOddNumbers(of: numbers)
+    
+    // then
+    XCTAssertEqual(result, 0)
+  }
+  
 }
