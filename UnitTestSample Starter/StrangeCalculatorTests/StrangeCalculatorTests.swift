@@ -34,4 +34,15 @@ final class StrangeCalculatorTests: XCTestCase {
     // then
     XCTAssertEqual(result, 33)
   }
+  
+  func test_빈배열을전달했을때_0이나오는지() {
+    // given
+    let numbers = [Int]()
+    
+    //when
+    let result = sut.addOddNumbers(of: numbers)
+    
+    // then
+    XCTAssertEqual(result, 0)
+  }
 }
