@@ -90,4 +90,14 @@ final class StrangeCalculatorTests: XCTestCase {
     XCTAssertEqual(result, 0)
   }
   
+  func test_addOddNumbers호출시_4_22_19_253_1000_6을전달하면_272가나오는지() {
+    // given
+    let numbers = [4, 22, 19, 253, 1000, 6]
+    
+    // when
+    let result = sut.addOddNumbers(of: numbers)
+    
+    // then
+    XCTAssertEqual(result, 272)
+  }
 }
