@@ -11,9 +11,11 @@ struct StrangeCalculator {
   }
   
   // for TDD
+  /// 배열의 모든 홀수의 합을 반환하는 함수
   func addOddNumbers(of numbers: [Int]) -> Int {
-    guard let result = numbers.first
-    else { return 0 }
+    guard let result = numbers.max() else {
+      return 0
+    }
     
     return result
   }

@@ -57,5 +57,14 @@ final class StrangeCalculatorTests: XCTestCase {
     XCTAssertEqual(result, 3)
   }
   
-  
+  func test_addOddNumbers호출시_4와9를전달하면_9가나오는지() {
+    // given
+    let numbers = [4, 9]
+    
+    // when
+    let result = sut.addOddNumbers(of: numbers)
+    
+    // then
+    XCTAssertEqual(result, 9)
+  }
 }
