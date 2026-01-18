@@ -13,13 +13,9 @@ struct StrangeCalculator {
   // for TDD
   /// 배열의 모든 홀수의 합을 반환하는 함수
   func addOddNumbers(of numbers: [Int]) -> Int {
-    var result = 0
-    
-    numbers.forEach {
-      if $0 % 2 == 1 {
-        result += $0
-      }
-    }
+    let result = numbers
+      .filter { $0 % 2 == 1 }
+      .reduce(0, +)
     
     return result
   }
