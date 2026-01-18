@@ -45,4 +45,17 @@ final class StrangeCalculatorTests: XCTestCase {
     // then
     XCTAssertEqual(result, 0)
   }
+  
+  func test_3을전달했을때_3이나오는지() {
+    // given
+    let numbers = [3]
+    
+    // when
+    let result = sut.addOddNumbers(of: numbers)
+    
+    // then
+    XCTAssertEqual(result, 3)
+  }
+  
+  
 }

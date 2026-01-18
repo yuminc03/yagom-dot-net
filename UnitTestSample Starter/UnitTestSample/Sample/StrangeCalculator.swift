@@ -6,16 +6,19 @@
 import Foundation
 
 struct StrangeCalculator {
-    func addNumbers(of numbers: [Int]) -> Int {
-        return numbers.reduce(0, +)
-    }
+  func addNumbers(of numbers: [Int]) -> Int {
+    return numbers.reduce(0, +)
+  }
+  
+  // for TDD
+  func addOddNumbers(of numbers: [Int]) -> Int {
+    guard let result = numbers.first
+    else { return 0 }
     
-    // for TDD
-    func addOddNumbers(of numbers: [Int]) -> Int {
-        return 0
-    }
-    
-    func addEvenNumbers(of numbers: [Int]) -> Int {
-        return 0
-    }
+    return result
+  }
+  
+  func addEvenNumbers(of numbers: [Int]) -> Int {
+    return 0
+  }
 }
