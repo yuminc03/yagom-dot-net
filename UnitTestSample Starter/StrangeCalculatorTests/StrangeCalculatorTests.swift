@@ -67,4 +67,15 @@ final class StrangeCalculatorTests: XCTestCase {
     // then
     XCTAssertEqual(result, 9)
   }
+  
+  func test_addOddNumbers호출시_3와17을전달하면_20이나오는지() {
+    // given
+    let numbers = [3, 17]
+    
+    // when
+    let result = sut.addOddNumbers(of: numbers)
+    
+    // then
+    XCTAssertEqual(result, 20)
+  }
 }
